@@ -65,6 +65,7 @@ env:
     ty-dc
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GH_REPOSITORY: ${{ github.repository }}
+
 jobs:
   issue_opened:
     name: Issue Opened
@@ -102,6 +103,7 @@ jobs:
             Thanks for your pull request!
             If the PR is ready, use the `/auto-cc` command to assign Reviewer to Review.
             We will review it shortly.
+
   issue_commented:
     name: Issue Commented
     continue-on-error: true
